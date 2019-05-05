@@ -2,7 +2,7 @@
   <v-container>
     <h2>OPEN</h2>
     <BarChart v-bind:chartdata="openChartData" v-bind:options="chartOptions" />
-    <v-divider></v-divider>
+    <v-divider class="chart-separator"></v-divider>
 
     <h2>CLOSE</h2>
     <BarChart v-bind:chartdata="closeChartData" v-bind:options="chartOptions" />
@@ -184,7 +184,7 @@ export default {
   canvas {
     height: 500px;
   }
-  .v-divider {
+  .chart-separator {
     margin: 25px 0;
   }
 </style>
